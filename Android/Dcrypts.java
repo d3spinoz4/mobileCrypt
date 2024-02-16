@@ -1,9 +1,6 @@
-package com.adx.wildfi;
-
 import android.os.Build;
 import android.util.Base64;
 import android.util.Log;
-
 import javax.crypto.*;
 import javax.crypto.spec.GCMParameterSpec;
 import javax.crypto.spec.PBEKeySpec;
