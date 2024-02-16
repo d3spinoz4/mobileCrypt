@@ -1,6 +1,6 @@
 //
 //  dataCrypt.swift
-//  WildFi
+
 //
 //  Created by David Espinoza on 5/28/22.
 //
@@ -71,7 +71,7 @@ private extension AESCrypt {
         if result == errSecSuccess {
             return keyData
         } else {
-            os_log("%{public}@", "\nWild-Fi-Log: Problem generating random bytes")
+            os_log("%{public}@", "\nLog: Problem generating random bytes")
             return nil
         }
     }
@@ -125,7 +125,7 @@ class dataCrypt {
             return encryptedData
 
         } catch {
-            os_log("%{public}@", "\nWild-Fi-Log:  \(String(describing: error))")
+            os_log("%{public}@", "\nLog:  \(String(describing: error))")
             return "Something went wrong: \(error)"
         }
     }
@@ -139,7 +139,7 @@ class dataCrypt {
             return decryptedData
 
         } catch {
-            os_log("%{public}@", "\nWild-Fi-Log:  \(String(describing: error))")
+            os_log("%{public}@", "\nLog:  \(String(describing: error))")
             return "Something went wrong: \(error)"
         }
     }
